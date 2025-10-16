@@ -8,6 +8,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Divider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComposeActivityTheme {
+            ComposeActivityTheme() {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
                     // 1. Llamada al nuevo componente de la actividad 3.02
                     Activity3_02Screen(modifier = Modifier.padding(innerPadding))
@@ -56,7 +57,7 @@ fun Activity3_02Screen(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun Activity3_02Preview() {
-    ComposeActivityTheme {
+    ComposeActivityTheme() {
         Activity3_02Screen()
     }
 }

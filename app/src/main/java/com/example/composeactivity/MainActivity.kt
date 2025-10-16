@@ -8,7 +8,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Divider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -49,9 +48,14 @@ fun Activity3_02Screen(modifier: Modifier = Modifier) {
                 text = item,
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
             )
-            Divider() // Separador visual entre elementos (si Material3 lo requiere)
+            Divider() // Separador visual entre elementos
         }
     }
+}
+
+@Composable
+fun Divider() {
+    TODO("Not yet implemented")
 }
 
 @Preview(showBackground = true)

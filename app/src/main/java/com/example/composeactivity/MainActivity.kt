@@ -84,3 +84,8 @@ fun Activity3_01Preview() {
         Activity3_01Screen()
     }
 }
+
+@Composable
+fun ComposeActivityTheme(content: @Composable () -> Unit) {
+    TODO("Not yet implemented")
+}
